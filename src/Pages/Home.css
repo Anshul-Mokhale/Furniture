@@ -1,0 +1,16 @@
+.home {
+    position: relative;
+    background-image: url('../assets/bgimage.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Dim effect: 0.5 = 50% dark */
+    z-index: 1;
+}

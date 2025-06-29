@@ -1,0 +1,14 @@
+/* styles.css */
+/* .scrll {
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    width: 320px;
+    max-width: 320px;
+} */
+
+@media (min-width: 768) {
+    .scrll {
+        width: 1008px;
+        max-width: 1008px;
+    }
+}
