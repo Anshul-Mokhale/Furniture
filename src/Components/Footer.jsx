@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import weblogo from '../assets/weblogo.png'
 
 function Footer() {
     return (
@@ -8,14 +9,14 @@ function Footer() {
             <div className="max-w-7xl mx-auto px-6 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
                 {/* Description */}
                 <div>
-                    <h1 className="text-2xl font-bold mb-4">My Website</h1>
+                    <h1 className="w-[150px] mb-4"><img src={weblogo} alt="" /></h1>
                     <p className="text-gray-300 text-sm leading-relaxed">
                         The advantage of hiring a workspace with us is that it gives you comfortable service and all-around facilities.
                     </p>
                 </div>
 
                 {/* Social Links */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-start sm:items-center">
                     <ul className="space-y-2 text-sm">
                         <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
 
@@ -32,7 +33,7 @@ function Footer() {
                 </div>
 
                 {/* Quick Links */}
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col items-start sm:items-center">
                     <ul className="space-y-2 text-sm">
                         <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
 
@@ -52,7 +53,7 @@ function Footer() {
             {/* Bottom Footer */}
             <div className="border-t border-gray-700 mt-6">
                 <p className="text-center text-xs text-gray-400 py-4">
-                    &copy; {new Date().getFullYear()} Furniture Store. All rights reserved.
+                    Designed By <a className='text-white font-bold underline' href="https://anshul-mokhale.netlify.app">Anshul Mokhale</a> &copy; {new Date().getFullYear()} Formhaus Furniture Store. All rights reserved.
                 </p>
             </div>
         </footer>

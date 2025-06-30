@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import weblogo from '../assets/weblogo.png';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -16,14 +16,14 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`navbar outfit flex justify-between items-center px-6 py-4 fixed w-full z-[999] transition-all duration-300 
+                className={`navbar outfit flex justify-between items-center px-6 py-1 fixed w-full z-[999] transition-all duration-300 
     ${isScrolled
                         ? 'bg-gray-800/50 backdrop-blur-md shadow-md'
                         : 'bg-transparent'
                     } text-white`}
             >
 
-                <div className="text-xl font-bold">My Website</div>
+                <div className="w-[100px]"><img src={weblogo} alt="" /></div>
 
                 {/* Desktop nav */}
                 <ul className="hidden md:flex space-x-6">
@@ -37,7 +37,7 @@ export default function Navbar() {
 
                 {/* Mobile menu button */}
                 <button
-                    className="md:hidden"
+                    className="md:hidden flex items-center justify-center"
                     onClick={() => setIsSidebarOpen(true)}
                 >
                     <box-icon name="menu" color="white"></box-icon>

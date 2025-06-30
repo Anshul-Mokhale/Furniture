@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import SwitchTabs from '../Components/SwitchTabs';
 import div1 from '../assets/div1.png'
@@ -9,6 +9,11 @@ import image3 from '../assets/image3.png'
 import Testimonials from './Testimonials';
 
 export default function Home() {
+    useEffect(
+        () => {
+            document.title = "Formhaus | Home"
+        }
+    )
     const features = [
         {
             title: "Luxury Facility",
